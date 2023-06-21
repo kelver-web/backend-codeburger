@@ -8,10 +8,14 @@ const __dirname = resolve(dirname(''))
 
 import "./database/index.js"
 
+const corsOptions = {
+  origin: 'https://codeburger-frontend-one.vercel.app',
+  credentials: true
+}
 class App {
   constructor() {
     this.app = express()
-    this.app.use(cors())
+    this.app.use(cors(corsOptions))
 
     this.middleware()
     this.routes()
