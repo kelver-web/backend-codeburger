@@ -1,6 +1,8 @@
 import multer from "multer"
 import { v4 } from "uuid"
-import { extname, resolve } from "path"
+import { extname, resolve, dirname } from "path"
+
+const __dirname = resolve(dirname(''))
 
 export default {
   storage: multer.diskStorage({

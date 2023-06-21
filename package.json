@@ -1,13 +1,13 @@
 {
   "name": "codeburger-backend",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "debug": "nodemon --inspect",
-    "start": "nodemon server.js"
+    "debug": "nodemon --inspect"
   },
   "extensionless": {
     "lookFor": ["js", "mjs", "cjs"]
