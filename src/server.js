@@ -1,7 +1,7 @@
 import app from "./app.js"
 
-const port = 3002
+const port = process.env.PORT || 3002
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`[nodemon] run in port ${port}`)
 })
