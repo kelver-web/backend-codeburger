@@ -3,7 +3,6 @@ import routes from "./routes"
 import cors from "cors"
 
 import { resolve } from "path"
-
 import "./database"
 
 class App {
